@@ -1,0 +1,8 @@
+axelerant_test.admin_settings:
+  path: '/page_json/{siteapikey}/{nodeid}'
+  defaults:
+    _title: 'Axelerant Test'
+    _controller: '\Drupal\axelerant_test\Controller\NodeToJson::generate'
+  requirements:
+    _permission: 'access content'
+

@@ -1,0 +1,5 @@
+name: Axelerant Test
+type: module
+description: 'Module for Axelerant Test'
+package: Custom
+core: 8.x
