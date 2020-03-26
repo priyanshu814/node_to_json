@@ -57,7 +57,7 @@ class NodeToJson extends ControllerBase {
     // Load the nid based on url.
     $node = $this->entityTypeManager->getStorage('node')->load($nodeid);
     // Check for condition.
-    if ($siteapikey == $key && $node->getType() == 'page') {
+    if ($node && $siteapikey == $key && $node->getType() == 'page') {
       return new JsonResponse($node->toArray());
     }
     // Throw access denied.
